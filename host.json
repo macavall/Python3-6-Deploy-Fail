@@ -1,14 +1,11 @@
 {
   "version": "2.0",
   "logging": {
-    "LogLevel": {
-    "Default": "Information",
-    "Microsoft": "Warning",
-    "Microsoft.Hosting.Lifetime": "Information",
-    "Host.Triggers.DurableTask": "Trace",
-     "DurableTask.AzureStorage": "Trace",
-     "DurableTask.Core": "Trace"
-
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
     }
   },
   "extensionBundle": {
